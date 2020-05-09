@@ -13,8 +13,6 @@ function calculate(){
   if (regexGemmes.test(gemmes) && regexOr.test(or)) {
     calcul = Math.floor(or / gemmes);
 
-    result = 'Le prix de 1 gemme est a 214 285 et la tienne est a ' + Milli(calcul);
-
     if (calcul > 300000) {
       document.getElementById('phrase').innerHTML = 'C\'est l\'affaire du siècle'
       document.getElementById('phrase').style.color = 'green';
